@@ -1,28 +1,18 @@
 package mod.hosni.fraj.compilerlog;
 
-import static mod.SketchwareUtil.getDip;
-
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Typeface;
-import android.view.View;
-import android.widget.HorizontalScrollView;
-import android.widget.ScrollView;
-import android.widget.TextView;
 
 import com.besome.sketch.tools.CompileLogActivity;
-import com.sketchware.remod.Resources;
 
-import mod.SketchwareUtil;
 import mod.agus.jcoderz.lib.FilePathUtil;
 import mod.agus.jcoderz.lib.FileUtil;
-import mod.hey.studios.util.CompileLogHelper;
 
 public class CompileErrorSaver {
 
-    private static final String MESSAGE_NO_COMPILE_ERRORS_SAVED = "No compile errors have been saved yet.";
+    private static final String MESSAGE_NO_COMPILE_ERRORS_SAVED =
+            "No compile errors on the last build.";
 
     public String sc_id;
     public FilePathUtil filePathUtil = new FilePathUtil();
@@ -62,23 +52,19 @@ public class CompileErrorSaver {
         context.startActivity(intent);
     }
 
-    /**
-     * Clear the last saved error text.
-     */
+    /** Clear the last saved error text. */
     public void clear() {
         FileUtil.deleteFile(path);
     }
 
-    /**
-     * @return The last saved error text
-     */
+    /** @return The last saved error text */
     public String getLog() {
         return FileUtil.readFile(path);
     }
 
     /**
-     * Check if the last saved error text file exists, if not, it'll get created and
-     * {@link CompileErrorSaver#MESSAGE_NO_COMPILE_ERRORS_SAVED} will be written to it.
+     * Check if the last saved error text file exists, if not, it'll get created and {@link
+     * CompileErrorSaver#MESSAGE_NO_COMPILE_ERRORS_SAVED} will be written to it.
      */
     public void check() {
         if (!FileUtil.isExistFile(path)) {
