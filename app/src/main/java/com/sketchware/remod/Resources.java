@@ -709,7 +709,7 @@ public class Resources {
         public static final int manage_permission = 0x7f0b01ca;
         public static final int view_code = 0x7f0b01cb;
         public static final int dialog_input_layout = 0x7f0b01ce;
-        public static final int about = 0x7f0b01cf;
+        public static final int about = 0x7F0B01CF;
         public static final int add_custom_attribute = 0x7f0b01d3;
         public static final int custom_view_attribute = 0x7f0b01d4;
         public static final int custom_dialog_attribute = 0x7f0b01d5;
