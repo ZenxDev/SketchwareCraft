@@ -1,136 +1,132 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff1d2128"
+		
+        android:orientation="vertical" >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#ff1d2128"
+            android:layout_height="200dp"
             android:orientation="vertical" >
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="vertical" >
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#ff1d2128"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/featured_logo" />
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="8dp"
-                android:paddingTop="15dp"
-                android:text="Notice "
-                android:textColor="#ffffffff"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="8dp"
-                android:paddingTop="3dp"
-                android:text="1. Sketchware Craft still in beta version so you may face some problems and bugs, rapport them in our Discord or Telegram group.\n2. Sketchware Craft is based on Sketchware Pro."
-                android:textColor="#ffcfd8dc"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="8dp"
-                android:paddingTop="15dp"
-                android:text="Community "
-                android:textColor="#ffffffff"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/telegram_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#ff1d2128"
-                android:gravity="center_vertical|center|center_horizontal|left"
-                android:paddingBottom="7dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="7dp"
-                android:paddingTop="7dp"
-                android:text="Telegram"
-                android:textAllCaps="false"
-                android:textColor="#ffffffff"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/discord_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ff1d2128"
-                android:gravity="center_vertical|center|center_horizontal|left"
-                android:paddingBottom="7dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="7dp"
-                android:paddingTop="7dp"
-                android:text="Discord"
-                android:textAllCaps="false"
-                android:textColor="#ffffffff"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/github_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ff1d2128"
-                android:gravity="center_vertical|center|center_horizontal|left"
-                android:paddingBottom="7dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="7dp"
-                android:paddingTop="7dp"
-                android:text="GitHub"
-                android:textAllCaps="false"
-                android:textColor="#ffffffff"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="5dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="8dp"
-                android:paddingTop="15dp"
-                android:text="MainModders"
-                android:textColor="#ffffffff"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="8dp"
-                android:paddingTop="3dp"
-                android:text="- Hosni Fraj"
-                android:textColor="#ffcfd8dc"
-                android:textSize="18sp" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/featured_logo" />
         </LinearLayout>
-    </ScrollView>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp"
+            android:text="Notice "
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:text="1. Sketchware Craft still in beta version so you may face some problems and bugs, rapport them in our Discord or Telegram group.\n2. Sketchware Craft is based on Sketchware Pro."
+            android:textColor="#ffcfd8dc"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp"
+            android:text="Community "
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/telegram_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff1d2128"
+            android:gravity="center_vertical|center|center_horizontal|left"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            android:text="Telegram"
+            android:textAllCaps="false"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/discord_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff1d2128"
+            android:gravity="center_vertical|center|center_horizontal|left"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            android:text="Discord"
+            android:textAllCaps="false"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/github_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff1d2128"
+            android:gravity="center_vertical|center|center_horizontal|left"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            android:text="GitHub"
+            android:textAllCaps="false"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp"
+            android:text="MainModders"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:text="- Hosni Fraj"
+            android:textColor="#ffcfd8dc"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>
