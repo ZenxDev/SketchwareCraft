@@ -10,7 +10,7 @@ public class AboutActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(Resources.layout.about);
+        setContentView(0x0);
 		
     }
 }
