@@ -12,7 +12,7 @@ import mod.agus.jcoderz.lib.FileUtil;
 public class CompileErrorSaver {
 
     private static final String MESSAGE_NO_COMPILE_ERRORS_SAVED =
-            "No compile errors on the last build.";
+            "No compile errors on the last build. ( try to run the app )";
 
     public String sc_id;
     public FilePathUtil filePathUtil = new FilePathUtil();
