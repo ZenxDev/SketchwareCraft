@@ -308,7 +308,16 @@ public class Dp {
      */
     public final String d() {
         StringBuilder classpath = new StringBuilder();
-
+        
+		/*
+         * Add yq#u (.sketchware/mysc/xxx/bin/classes) if it exists
+         * since there might be compiled Kotlin files for ecj to use classpath as.
+         */
+        if (FileUtil.isExistFile(f.u)) {
+            classpath.append(f.u);
+            classpath.append(":");
+        }
+		
         /* Add android.jar */
         classpath.append(o);
 
