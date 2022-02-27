@@ -5,9 +5,11 @@ import java.util.ArrayList;
 public class DarkColors {
 	
     public static ArrayList<String> getColors() {
-        ArrayList colors = new ArrayList<String>;
+        ArrayList<String> colors = new ArrayList<String>();
+		colors.add(0, "#CCCCCC"); // Description TextView
 		
-        return null;
+		
+        return colors;
     }
 	
 }
