@@ -183,6 +183,7 @@ public class Resources {
         public static final int opacity_48 = 0x7f070334;
         public static final int open_box_48 = 0x7f070335;
         public static final int plugin_purple_96 = 0x7f07034a;
+        public static final int pin_32 = 0x7f070347;
         public static final int pull_down_48 = 0x7f070355;
         public static final int rename_96_blue = 0x7f07035f;
         public static final int resize_48 = 0x7f070360;
