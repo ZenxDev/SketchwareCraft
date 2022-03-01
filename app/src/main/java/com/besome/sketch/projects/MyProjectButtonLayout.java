@@ -30,6 +30,7 @@ public class MyProjectButtonLayout extends FrameLayout {
     public AnimatorSet k;
     public AnimatorSet l;
     public MyProjectButton m;
+    public MyProjectButton zz;
     public MyProjectButton n;
     public MyProjectButton o;
     public MyProjectButton p;
@@ -44,6 +45,7 @@ public class MyProjectButtonLayout extends FrameLayout {
         d.setOnClickListener(onClickListener);
         e.setOnClickListener(onClickListener);
         m.setOnClickListener(onClickListener);
+        zz.setOnClickListener(onClickListener);
         n.setOnClickListener(onClickListener);
         o.setOnClickListener(onClickListener);
         p.setOnClickListener(onClickListener);
@@ -70,19 +72,23 @@ public class MyProjectButtonLayout extends FrameLayout {
         m = a(0,
                 Resources.drawable.settings_96,
                 xB.b().a(context, Resources.string.myprojects_list_menu_title_settings));
-        n = a(1,
+        zz = a(1,
+                Resources.drawabable.pin_32,
+                "Pin Project");
+        n = a(2,
                 Resources.drawable.ic_backup,
                 "Back up");
-        o = a(2,
+        o = a(3,
                 Resources.drawable.ic_export_grey_48dp,
                 xB.b().a(context, Resources.string.myprojects_list_menu_title_sign_export));
-        p = a(3,
+        p = a(4,
                 Resources.drawable.ic_delete_grey_48dp,
                 xB.b().a(context, Resources.string.myprojects_list_menu_title_delete));
-        q = a(4,
+        q = a(5,
                 Resources.drawable.settings_96,
                 "Config");
         h.addView(m);
+        h.addView(zz);
         h.addView(n);
         h.addView(o);
         h.addView(p);
